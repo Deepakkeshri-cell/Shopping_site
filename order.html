@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoplogo - Order Status</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+    <div class="order-status-container">
+        <h1>Order Status</h1>
+        <div class="order-info">
+            <p><strong>Order ID:</strong> <span id="orderId">#123456789</span></p>
+            <p><strong>Order Date:</strong> <span id="orderDate">September 10, 2024</span></p>
+            <p><strong>Total:</strong> <span id="orderTotal">$249.99</span></p>
+            <p><strong>Estimated Delivery:</strong> <span id="estimatedDelivery">-</span></p>
+        </div>
+
+        <div class="order-progress">
+            <h2>Track your order:</h2>
+            <div class="progress-bar">
+                <div class="step" id="step1">
+                    <span>Order Placed</span>
+                    <div class="circle"></div>
+                </div>
+                <div class="step" id="step2">
+                    <span>Processing</span>
+                    <div class="circle"></div>
+                </div>
+                <div class="step" id="step3">
+                    <span>Shipped</span>
+                    <div class="circle"></div>
+                </div>
+                <div class="step" id="step4">
+                    <span>Delivered</span>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="action-section">
+            <button id="cancelOrderBtn" class="hidden">Cancel Order</button>
+            <p id="orderMessage"></p>
+        </div>
+    </div>
+
+    <script src="order.js"></script>
+</body>
+
+</html>

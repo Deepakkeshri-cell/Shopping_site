@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <nav style="background-color: black;" class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+                <h1 class="logo">
+                    <!-- <img src ="https://static.nike.com/a/images/f_jpg,q_auto:eco/61b4738b-e1e1-4786-8f6c-26aa0008e80b/swoosh-logo-black.png" 
+                    width="=60" height="60"> -->
+                    <div class="logo">
+                        <a href="index.html">ShopLogo</a>
+                    </div>
+                </h1>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+    <section id="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-item" onclick="navigateToCategory('electronics')">
+                    <img src="https://www.bing.com/th?id=OPAC.EkHif%2bd5ilaqpQ474C474&o=5&pid=21.1&w=160&h=213&rs=1&qlt=100&dpr=1.1&c=8&pcl=f5f5f5"
+                        alt="Electronics">
+                    <div class="category-title">JEANS</div>
+                </div>
+                <div class="category-item" onclick="navigateToCategory('fashion')">
+                    <img src="https://rukminim1.flixcart.com/image/612/612/k4rcmfk0pkrrdj/watch-refurbished/z/7/z/c-1730sl02-titan-original-imafdcjhvdzqrysw.jpeg?q=70"
+                        alt="Fashion">
+                    <div class="category-title">WATCHES</div>
+                </div>
+                <div class="category-item" onclick="navigateToCategory('home-garden')">
+                    <img src="https://www.bing.com/th?id=OPAC.ZKvFh275VdjBVw474C474&o=5&pid=21.1&w=160&h=240&rs=1&qlt=100&dpr=1.1&c=8&pcl=f5f5f5"
+                        alt="Home & Garden">
+                    <div class="category-title">BAGS</div>
+                </div>
+                <div class="category-item" onclick="navigateToCategory('sports')">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71KhsRhFSBL._AC_UL1500_.jpg"
+                        alt="Sports">
+                    <div class="category-title">SHOES</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="About.html">about us</a></li>
+                        <li><a href="Services.html">our services</a></li>
+                        <li><a href="privacy_policy.html">privacy policy</a></li>
+                        <li><a href="Affiliate_program.html">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="order.html">order status</a></li>
+                        <li><a href="payment.html">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <!-- <div class >
+                <a href="https://www.instagram.com/nike/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/user/NIKE" class="fa fa-youtube"></a>
+                <a href="https://www.linkedin.com/company/nike/" class="fa fa-linkedin"></a>    
+            </div> -->
+
+                    <section id="social-media">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/nike/" class="social-icon facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://x.com/Nike" class="social-icon twitter" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/nike/" class="social-icon instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/nike/" class="social-icon linkedin"
+                                target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </section>
+
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

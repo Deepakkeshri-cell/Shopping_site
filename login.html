@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopLogo - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <h1>ShopLogo</h1>
+        </div>
+        <form id="loginForm" class="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email" required>
+                <span id="emailError" class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+                <span id="passwordError" class="error-message"></span>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <span id="authError" class="error-message"></span>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

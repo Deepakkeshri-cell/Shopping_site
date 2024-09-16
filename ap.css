@@ -1,0 +1,87 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Affiliate Program Section */
+#affiliate-program {
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Headings */
+#affiliate-program h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#affiliate-program h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Text Paragraphs */
+#affiliate-program p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Ordered and Unordered Lists */
+#affiliate-program ol,
+#affiliate-program ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+#affiliate-program ol li,
+#affiliate-program ul li {
+    margin-bottom: 10px;
+}
+
+/* Strong Text */
+#affiliate-program li strong {
+    color: #333;
+}
+
+/* Signup Button */
+.signup-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup-button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #affiliate-program {
+        padding: 30px 15px;
+    }
+
+    .signup-button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoplogo - Privacy Policy</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .accordion {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            outline: none;
+            width: 100%;
+            text-align: left;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .accordion.active,
+        .accordion:hover {
+            background-color: #0056b3;
+        }
+
+        .panel {
+            display: none;
+            padding: 0 18px;
+            background-color: white;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .panel p {
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #007bff;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+
+        <p>Welcome to Shoplogo! We value your privacy and are committed to protecting your personal data. This Privacy
+            Policy explains how we collect, use, and safeguard your information.</p>
+
+        <!-- Accordion Buttons -->
+        <button class="accordion">1. What Information Do We Collect?</button>
+        <div class="panel">
+            <p>We collect personal data that you provide to us, such as your name, email address, payment details, and
+                shipping address when making a purchase. We also gather technical data like your IP address and browsing
+                habits via cookies.</p>
+        </div>
+
+        <button class="accordion">2. How Do We Use Your Information?</button>
+        <div class="panel">
+            <p>Your information is used to process transactions, improve our website, and provide customer service. We
+                may also use your data to send you promotional offers, but only with your consent.</p>
+        </div>
+
+        <button class="accordion">3. How Do We Protect Your Information?</button>
+        <div class="panel">
+            <p>We implement security measures like encryption to protect your personal data. We also ensure that
+                third-party service providers adhere to privacy regulations.</p>
+        </div>
+
+        <button class="accordion">4. Do We Share Your Information?</button>
+        <div class="panel">
+            <p>We only share your data with trusted third-party services to process your orders (e.g., payment
+                processors, shipping companies). We do not sell or rent your data to marketers.</p>
+        </div>
+
+        <button class="accordion">5. Your Rights</button>
+        <div class="panel">
+            <p>You have the right to access, modify, or delete your personal data. You can also opt-out of receiving
+                promotional communications by contacting our support team.</p>
+        </div>
+
+        <button class="accordion">6. Contact Us</button>
+        <div class="panel">
+            <p>If you have any questions or concerns about your privacy, please contact us at privacy@shoplogo.com.</p>
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript for accordion functionality
+        const accordions = document.querySelectorAll('.accordion');
+
+        accordions.forEach(acc => {
+            acc.addEventListener('click', function () {
+                // Toggle active class on clicked accordion
+                this.classList.toggle('active');
+
+                // Get the panel related to this accordion
+                const panel = this.nextElementSibling;
+
+                // Toggle between showing and hiding the panel
+                if (panel.style.display === 'block') {
+                    panel.style.display = 'none';
+                } else {
+                    panel.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
